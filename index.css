@@ -1,67 +1,115 @@
 *{
-    margin: 0 ; 
-    padding: 0 ; 
+    margin: 0px ; 
+    padding: 0px ; 
     box-content: border-box; 
      font-family:    "Libre Franklin", sans-serif;  
- 
-} 
-:root{
-    
-}
+     
 
+    
+} 
+.red-email{
+    border-color:  hsl(354, 100%, 66%) !important; 
+
+
+}
+.green-email{
+    border-color: green !important; 
+}
 body{ 
     background-color: #FFF; 
+    
+      font-size: 1.25rem ; 
+    
+
 }
 
-#email {
-    border-radius: 12.5rem; /* 12.5px to rem */
-    height: 3.063rem; /* 49px to rem */
-    width: 23.0rem; /* 368px to rem */
+.white-error{
+      color: white; 
+
+
+}
+.error{
+ color: red; 
+ font-size: 13px;  
+ white-space: nowrap; 
+ margin-left: 2.5rem; 
+ margin-right:  265px; 
+ font-family: "Libre Franklin", sans-serif;
+ font-weight: 300; 
+}
+#email{
+    
+    border-radius: 30px; /* 12.5px to rem */
+    min-height: 3.0625rem ; /* 49px to rem */
+    max-width: 40vh;/* 368px to rem */
     border: #D3D3D3 1px solid;
     outline: none; 
-    margin-top: 1.25rem; /* 20px to rem */
+    margin-top:   1.25rem; /* 20px to rem */
+    width: 100vh; 
+     
+    
+
+    
 }
+
+.part1{ 
+    margin-bottom: 1.875rem;
+}
+.button {
+    border-radius: 100px; /* 100px to rem */
+    min-height: 3.0625rem; /* 49px to rem */
+    max-width:   10%; /* 169px to rem */
+    background-color: hsl(223, 87%, 63%); 
+    color: white;     
+    margin-left: 0.625rem; /* 10px to rem */
+    border: none; -
+    width: 100vh;-
+
+    
+}
+
+
+
+
 
 .charted img{
-    margin-top: 3.125rem; 
-    width: 41.25rem;  
-     
+    margin-top: 2.5rem; 
+    max-width: 50vh; 
+    margin-bottom: 50px; 
+    
 }
 .section{
-    
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh ;
-
+    margin-top:6.25rem;
+     text-align: center; 
+     margin-bottom: -50px; 
 
 }
 .blue{
     color: hsl(223, 87%, 63%);  
 }
 .subscribe {
-    font-size: 1rem; /* 16px to rem */
-    margin-top: -1.25rem; /* -20px to rem */
-    margin-bottom: 1.25rem; /* 20px to rem */
-}
+    font-size: 1rem; 
+  /* 16px to rem */
 
-body{ 
-    font-size:  1.25rem;
-}
+ margin-top: 1.75rem; /* -20px to rem */
+margin-bottom: 1.25rem; /* 20px to rem  */ 
+} 
+
 .we-are-launching {
-    font-size: 2.5rem; /* 40px to rem */
-    margin: 2.188rem; /* 35px to rem */
-    margin-top: 2.5rem; /* 40px to rem */
+    font-size: 2.5rem; /* 40px to rem */ 
+    margin:  2.1rem; /* 35px to rem */
+    margin-top: 2.5rem;
+    font-weight: 700;  /* 40px to rem */
+    
 }
 
 .icons {
     color: hsl(223, 87%, 63%);
     display: flex; 
     justify-content: center;
-    gap: 1.813rem; /* 29px to rem */
-    font-size: 0.938rem; /* 15px to rem */
-    margin-top: 3.125rem; /* 50px to rem */
+    gap: 29px; /* 29px to rem */
+    font-size: 0.9375rem ; /* 15px to rem */
+    margin-top:3.125rem ; /* 50px to rem */
     margin-bottom: 2.25rem; /* 36px to rem */
 }
 
@@ -76,28 +124,119 @@ body{
     font-weight: 300; 
 
 }
-.button {
-    border-radius: 6.25rem; /* 100px to rem */
-    height: 3.063rem; /* 49px to rem */
-    width: 10.563rem; /* 169px to rem */
-    background-color: hsl(223, 87%, 63%); 
-    color: white;     
-    margin-left: 0.625rem; /* 10px to rem */
-    border: none; 
-}
 
 
-.section{
-   text-align: center; 
 
-}
-
-.paragraph {
-    color: white; 
+/*.paragraph {
+    color: blue; 
     margin-top: 1.25rem;  /* 20px to rem */
-    margin-right: 10.313rem;  /* 165px to rem */
-    font-size: 0.875rem;  /* 14px to rem */
-    font-family: "Abel", sans-serif;
+   /*  margin-right: 10.3125rem;  /* 165px to rem */
+/*  font-size: 0.875rem;  /* 14px to rem */
+   /* font-family: "Abel", sans-serif;
+}  */ 
+
+
+@media screen and (max-width:540px){
+    .button{
+        width: 100vh; 
+        max-width: 40vh;
+        text-align: center; 
+        margin-top: 0.3125rem ; 
+
+    }
+    .white-error{
+        margin-left: 2.5rem;
+        font-weight: 300; 
+    }
+    #email{
+        
+    }
+    .paragraph{
+          margin: 0  auto; 
+          margin-top: 20px; 
+    }
+    
+}
+
+@media screen and (max-width: 912px)  and (min-width: 768px){
+    .error{
+        
+        position: absolute;  
+        margin-left: 8.25rem;
+             
+
+    }  
+    
+
+
+    
+    #form{
+        position:relative; 
+    }
+     .gray-text{
+        font-weight: 300; 
+     }
+    .button{ 
+        border-radius: 100px;  
+        min-height: 3.0625rem;  
+        max-width: 20vh ;
+        width: 100vh ; 
+        margin-left: 10px; 
+        border: none; 
+        
+    }   
+    #email{
+         max-width:    30vh ;
+        
+         width: 100vh; 
+      }
+
+}
+@media screen and (min-width: 1024px){  
+     .error{
+    position: absolute; 
+
+}
+.error{
+    margin-left: 21.875rem; 
+}
+#email{
+    max-width:  30% ;  
+    width: 100%; 
+    
 }
 
 
+.button{
+    position: relative;  
+    max-width:  17%;
+    width: 100%; 
+}
+
+}   
+@media screen and (max-width: 1024px)  and (min-width: 1024px) {
+    
+    .error{
+        margin-left: 290px;
+    }
+}
+
+
+@media screen and (min-width:1288px){
+    .error{
+        margin-left:590px;
+    }
+    .button{
+        max-width:13%; 
+        width: 100%; 
+    }
+    #email{
+        max-width:   20%;
+        width: 100%; 
+    }
+}
+@media screen and (max-width: 375px) and (min-width: 375px){
+    .error{
+        margin-left:  67px; 
+    }
+}
