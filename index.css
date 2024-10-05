@@ -222,7 +222,7 @@ margin-bottom: 1.25rem; /* 20px to rem  */
 }
 
 
-@media screen and (min-width:1288px){
+@media screen and (min-width:1288px) and (max-width:1288px) {
     .error{
         margin-left:590px;
     }
@@ -234,9 +234,34 @@ margin-bottom: 1.25rem; /* 20px to rem  */
         max-width:   20%;
         width: 100%; 
     }
+
+}
+
+
+@media screen and (min-width:1289px){
+    .error{
+        margin-left: 650px; 
+        margin-top: -20px;
+
+    }
+    .button{
+        max-width: 13%; 
+       width: 100%;
+    }
+    #email{
+        max-width: 20%; 
+        width: 100%;
+        margin-bottom: 20px;
+
+
+    }
+    .section{
+         margin-top: 120px; 
+
+    }
 }
 @media screen and (max-width: 375px) and (min-width: 375px){
     .error{
         margin-left:  67px; 
-    }
-}
+    } 
+} 
